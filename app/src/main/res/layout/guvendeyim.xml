@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/guvendeyim"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+
+
+        android:background="@drawable/rounded_green_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="guvendeyim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.49">
+
+
+        <ImageView
+            android:id="@+id/tikIkonu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/common_google_signin_btn_icon_light" />
+
+        <TextView
+            android:id="@+id/durumMetni1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/tikIkonu"
+            android:text="GÜVENDEYİM"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/guvendeDegilim"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+
+        android:background="@drawable/rounded_red_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="guvendeDegilim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.49">
+
+        <ImageView
+            android:id="@+id/carpiIkon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/common_google_signin_btn_icon_light" />
+
+        <TextView
+            android:id="@+id/durumMetni2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/carpiIkon"
+            android:text="GÜVENDE DEĞİLİM"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/userMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="409dp"
+        android:layout_height="554dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guvendeyim"
+        app:layout_constraintVertical_bias="0.375">
+
+    </androidx.fragment.app.FragmentContainerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

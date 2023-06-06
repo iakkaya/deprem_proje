@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "39529956990",
+    "project_id": "deprem-90e67",
+    "storage_bucket": "deprem-90e67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39529956990:android:0ae45f42dc6005e677fa2f",
+        "android_client_info": {
+          "package_name": "com.example.deprem_proje"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39529956990-m8bq96f0e9in41na18lhlj40kfqkrdm6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACIn-Xauhr122I-_JSBm9_hC9Tdrj0sMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39529956990-m8bq96f0e9in41na18lhlj40kfqkrdm6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
